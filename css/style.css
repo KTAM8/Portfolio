@@ -20,7 +20,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;/*親要素のカラー引継ぎ*/
-  cursor: pointer;
 }
 
 li {
