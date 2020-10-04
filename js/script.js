@@ -26,13 +26,6 @@ $(function () {
 			$('#fadeLayer').css("visibility", "hidden");
 		}
 	});
-	
-    //メニュー展開時の暗転
-	$('#fadeLayer').click(function(){
-		$('#drawer_menu').removeClass('active');
-		$('#humburger').removeClass('active');
-		$(this).css("visibility", "hidden");
-	});
 
 	//600px以上の幅ではドロワーメニュー解除
 	$(window).on("resize", function() {

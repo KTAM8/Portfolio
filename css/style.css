@@ -46,7 +46,7 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
 .header_nav {
   height: 60px;
   width: 100%;
-  background: linear-gradient(to right, #252525, #000000);
+  background: linear-gradient(to right, #252525, #030303);
   color:white;
   justify-content: space-between;
   display: flex;
@@ -125,7 +125,7 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
 
 #humburger {
   display: block;
-  width: 60px;
+  width: 56px;
   height: 60px;
   cursor: pointer;
   z-index: 3;
@@ -135,19 +135,20 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
 #humburger span {
   display: block;
   position: relative;
-  width: 30px;
+  width: 24px;
   border-bottom: solid 2px rgb(255, 255, 255);
-  transition: 0.15s ease-in-out;
+  transition: 0.1s ease-in-out;
   border-radius: 3px;
+  margin: 0 auto;
 }
 #humburger span:nth-child(1) {
-  top: 20px;
+  top: 22px;
 }
 #humburger span:nth-child(2) {
   top: 28px;
 }
 #humburger span:nth-child(3) {
-  top: 36px;
+  top: 34px;
 }
 
 /* 最初のspanをマイナス45度に */
@@ -252,7 +253,7 @@ main {
 
 .dark_BG {
   color:white;
-  background: linear-gradient(to right, #252525, #000000);
+  background: linear-gradient(to right, #252525, #030303);
 }
 
 .work{
@@ -299,7 +300,7 @@ main {
 
 /*footer setting*/
 footer {
-  background-color: #000000;
+  background-color: #030303;
   color: white;
   text-align: center;
   padding: 20px;
@@ -343,14 +344,12 @@ footer {
 @media screen and (max-width: 1280px) and (min-width: 960px) {
   .top_wrapper {
     height: 400px;
-    transition: 1s ease-in-out 0.01s;
   }
 }
 /*tablet size*/
 @media screen and (max-width: 959px) and (min-width: 600px) {
   .top_wrapper {
     height: 300px;
-    transition: 1s ease-in-out 0.01s;
   }
 
   .left_space, .right_space, .center_space{
@@ -361,7 +360,10 @@ footer {
 @media screen and (max-width: 599px) {
   .top_wrapper {
     height: 250px;
-    transition: 1s ease-in-out 0.01s;
+  }
+
+  .logo {
+    padding: 5px;
   }
 
   .left_space {
