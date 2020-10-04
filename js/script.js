@@ -7,7 +7,7 @@ $(function () {
 	
 	// メニュー項目移動処理
 	$('a[href^="#"]').click(function() {
-		let speed = 500; // Scrolling Speed 
+		let speed = 400; // Scrolling Speed 
 		let href= $(this).attr("href");
 		let target = $(href == "#" || href == "" ? 'html' : href);
 		let position = target.offset().top;
