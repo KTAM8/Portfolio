@@ -1,4 +1,4 @@
-/*********************************************************/
+@charset "UTF-8";
 /***define element-box size***/
 * {
   padding: 0;
@@ -8,7 +8,6 @@
 
 /***general setting***/
 body {
-  width: 100%;
   padding: 0;
   margin: 0;
   font-family: "メイリオ", "Meiryo",sans-serif, "游ゴシック Medium", "Yu Gothic Medium", 
@@ -47,7 +46,7 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
 .header_nav {
   height: 60px;
   width: 100%;
-  background-color: rgba(48, 48, 48, 0.5);
+  background: linear-gradient(to right, #252525, #000000);
   color:white;
   justify-content: space-between;
   display: flex;
@@ -57,6 +56,7 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
   position: fixed;
   top: 0;
   z-index: 10;
+  opacity: 0.8;
 }
 
 .logo{
@@ -75,10 +75,10 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
 }
 
 .menu_list li:hover {
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: #3f3f3f;
   color: white;
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: 0.15s;
 }
 
 /*humburger shape*/
@@ -88,7 +88,7 @@ body::before {/*body前の疑似要素設定(top wrapper using CSS)*/
   background-color: rgba(48, 48, 48, 0.5);
   color: white;
   text-align: center;
-  transition: all .15s;
+  transition: all 0.15s;
   width: 100%;
   display :none;
 }
@@ -204,7 +204,6 @@ main {
   width: 80%;
   border-radius: 3px;
   margin: 0 auto;
-  opacity: 0.95;
 }
 
 .right_space {
@@ -216,13 +215,14 @@ main {
   margin:10px auto ;
 }
 
-.marker {
+/* .marker {
   text-decoration:underline solid rgba(48, 48, 48, 0.5);
-}
+} */
 
 .myname{
   margin-bottom: 15px;
   font-size: 24px;
+  border-bottom: 2px solid #6b6b6b;
 }
 
 .info ul{
@@ -234,7 +234,7 @@ main {
 }
 
 .skill{
-  border: 1px solid rgba(24, 24, 24, 0.2);
+  border: 0.5px solid rgba(24, 24, 24, 0.2);
   border-radius: 16px;
   padding: 3px 10px;
   margin: 3px 0;
@@ -252,7 +252,7 @@ main {
 
 .dark_BG {
   color:white;
-  background-color: rgb(48, 48, 48);
+  background: linear-gradient(to right, #252525, #000000);
 }
 
 .work{
@@ -273,6 +273,11 @@ main {
   max-width: 100%;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  opacity:0.8;
+}
+
+.picture:hover{
+  opacity:1.0;
 }
 
 .info_title {
@@ -294,7 +299,7 @@ main {
 
 /*footer setting*/
 footer {
-  background-color: #222222;
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 20px;
@@ -319,7 +324,7 @@ footer {
 }
 
 .social a:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #3f3f3f;
 }
 
 #fadeLayer {
@@ -363,6 +368,7 @@ footer {
     width: 100%;
     text-align: center;
     font-size:0.85rem;
+    padding: 0;
   }
 
   .profile_image{
@@ -372,8 +378,8 @@ footer {
 
   .right_space,.center_space{
     width: 100%;
-    padding: 5%;
-    font-size:0.85rem;
+    padding: 4%;
+    font-size:0.82rem;
   }
 
   .gallery, .work_info{
